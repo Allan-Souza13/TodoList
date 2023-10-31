@@ -14,15 +14,15 @@ export const TodoWrapper = () => {
   const toggleComplete = id => {
     setTodos(todos.map(todo => todo.id === id ? {...todo,completed: !todo.completed} : todo))
 } 
-  
+  //deletar
 const deleteTodo = id => {
   setTodos(todos.filter(todo => todo.id !== id))
 }
-
+//editar
 const editTodo = id => {
   setTodos(todos.map(todo => todo.id === id ? {...todo, isEditing: !todo.isEditing} : todo))
 }
-
+// /editar
 const editTask = (task, id) => {
   setTodos(todos.map(todo => todo.id === id ? {...todo, task, isEditing: !todo.isEditing} : todo))
 }

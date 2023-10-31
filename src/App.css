@@ -8,7 +8,7 @@
 }
 
 body {
-  background: #5887ff;
+  background:linear-gradient(to left,  #5887ff,#3c3c95) ;
   display: flex;
   justify-content: center;
   align-items: center;
